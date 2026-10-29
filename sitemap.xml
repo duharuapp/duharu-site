@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://duharu.com/</loc><lastmod>2026-10-30</lastmod><priority>1.0</priority></url>
-  <url><loc>https://duharu.com/download/</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://duharu.com/support/</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://duharu.com/privacy/</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://duharu.com/terms/</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://duharu.com/delete-account/</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://duharu.com/</loc></url>
+  <url><loc>https://duharu.com/story/</loc></url>
+  <url><loc>https://duharu.com/features/</loc></url>
+  <url><loc>https://duharu.com/plus/</loc></url>
+  <url><loc>https://duharu.com/guide/</loc></url>
+  <url><loc>https://duharu.com/download/</loc></url>
+  <url><loc>https://duharu.com/support/</loc></url>
+  <url><loc>https://duharu.com/privacy/</loc></url>
+  <url><loc>https://duharu.com/terms/</loc></url>
+  <url><loc>https://duharu.com/delete-account/</loc></url>
 </urlset>
