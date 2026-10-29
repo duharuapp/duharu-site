@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>앱 받기 - 두하루</title>
+<meta name="description" content="두하루 앱 받기: 아이폰은 App Store, 안드로이드는 11월 중순 Google Play.">
+<link rel="canonical" href="https://duharu.com/download/">
+<meta name="apple-itunes-app" content="app-id=6822325557">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="두하루">
+<meta property="og:title" content="앱 받기 - 두하루">
+<meta property="og:description" content="두하루 앱 받기: 아이폰은 App Store, 안드로이드는 11월 중순 Google Play.">
+<meta property="og:url" content="https://duharu.com/download/">
+<meta property="og:image" content="https://duharu.com/assets/og.png">
+<meta property="og:locale" content="ko_KR">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><img src="/assets/img/icon-512.png" alt="" width="30" height="30">두하루</a>
+  <nav><a href="/support/">도움말</a></nav>
+</div></header>
+<main class="wrap doc page">
+<div class="dl">
+  <img src="/assets/img/icon-512.png" alt="" width="88" height="88" class="dl-icon">
+  <h1>두하루 받기</h1>
+  <p class="meta">장거리·교대근무 커플의 같은 하루</p>
+
+  <div id="ios" class="dl-part" hidden>
+    <p>App Store로 이동하고 있어요…</p>
+    <a class="btn big js-appstore" href="https://apps.apple.com/kr/app/id6822325557?ct=web">App Store에서 받기</a>
+  </div>
+
+  <div id="android" class="dl-part" hidden>
+    <div class="box"><h2>안드로이드는 11월 중순에 나와요</h2><p>지금은 아이폰에서 먼저 쓸 수 있어요. Google Play에 나오면 이 주소에서 바로 받을 수 있어요.</p></div>
+    <a class="btn big js-play" href="https://play.google.com/store/apps/details?id=com.seulki.coupleapp" hidden>Google Play에서 받기</a>
+  </div>
+
+  <div id="desktop" class="dl-part" hidden>
+    <p>폰 카메라로 QR 코드를 찍으면 바로 받을 수 있어요.</p>
+    <img src="/assets/qr-download.svg" alt="duharu.com/download QR 코드" width="200" height="200" class="dl-qr">
+    <div class="cta" style="justify-content:center">
+      <a class="btn js-appstore" href="https://apps.apple.com/kr/app/id6822325557?ct=web">App Store</a>
+      <span class="btn ghost js-play-soon">Google Play 11월 중순</span>
+      <a class="btn js-play" href="https://play.google.com/store/apps/details?id=com.seulki.coupleapp" hidden>Google Play</a>
+    </div>
+  </div>
+  <p class="meta" style="margin-top:28px"><a href="/">두하루 더 알아보기</a></p>
+</div>
+<style>
+.dl { text-align: center; display: grid; justify-items: center; gap: 6px; padding-top: 16px; }
+.dl-icon { border-radius: 22px; border: 1px solid var(--line); margin-bottom: 8px; }
+.dl h1 { margin: 0; }
+.dl-part { display: grid; justify-items: center; gap: 16px; margin-top: 20px; width: 100%; }
+.dl-part[hidden], .dl [hidden] { display: none !important; }
+.dl .box { text-align: left; margin: 0; }
+.btn.big { padding: 18px 32px; font-size: 18px; }
+.dl-qr { border-radius: 16px; border: 1px solid var(--line); background: #fff; padding: 6px; }
+</style>
+<script>
+(function () {
+  // 플레이 스토어에 나오면 true로 바꿔요 (안드로이드는 바로 플레이 스토어로 감)
+  var PLAY_LIVE = false;
+  var q = new URLSearchParams(location.search);
+  var src = (q.get('src') || '').replace(/[^a-z0-9_-]/gi, '').slice(0, 20);
+  var ct = src && src !== 'qr' ? 'web-' + src : 'web';
+  var ios = 'https://apps.apple.com/kr/app/id6822325557?ct=' + ct;
+  var play = 'https://play.google.com/store/apps/details?id=com.seulki.coupleapp&referrer=' + encodeURIComponent('utm_source=web&utm_campaign=' + ct);
+  document.querySelectorAll('.js-appstore').forEach(function (a) { a.href = ios; });
+  document.querySelectorAll('.js-play').forEach(function (a) { a.href = play; a.hidden = !PLAY_LIVE; });
+  document.querySelectorAll('.js-play-soon').forEach(function (a) { a.hidden = PLAY_LIVE; });
+  var ua = navigator.userAgent;
+  var isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var isAndroid = /Android/.test(ua);
+  var part = isIOS ? 'ios' : isAndroid ? 'android' : 'desktop';
+  document.getElementById(part).hidden = false;
+  if (isIOS) location.replace(ios);
+  else if (isAndroid && PLAY_LIVE) location.replace(play);
+})();
+</script>
+<noscript><p style="text-align:center"><a href="https://apps.apple.com/kr/app/id6822325557?ct=web">App Store에서 받기</a></p></noscript>
+
+</main>
+<footer class="foot"><div class="wrap">
+  <nav><a href="/privacy/">개인정보처리방침</a><a href="/terms/">이용약관</a><a href="/delete-account/">계정 삭제</a><a href="/support/">도움말·문의</a><a href="/download/">앱 받기</a></nav>
+  <span>두하루(duharu) · 사업자등록번호 264-03-03897 · 통신판매업 신고번호 제2026-서울서대문-1082호 · 문의 duharu.app@gmail.com</span>
+</div></footer>
+</body>
+</html>
