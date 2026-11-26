@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; img-src 'self' data:; connect-src 'self' https://cjymqezqxrenofeeiduh.supabase.co; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>두하루 열기 - 두하루</title>
 <meta name="description" content="두하루 앱을 열어요.">
 <link rel="canonical" href="https://duharu.com/open/">
 <meta name="apple-itunes-app" content="app-id=6822325557">
-<meta name="theme-color" content="#FAF8FF">
-<!-- 검색 등록 확인 태그: 구글 서치 콘솔·네이버 서치어드바이저에서 받은 값을 content에 넣고 주석을 풀어요 -->
-<!-- <meta name="google-site-verification" content=""> -->
-<!-- <meta name="naver-site-verification" content=""> -->
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121117" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="두하루">
 <meta property="og:title" content="두하루 열기 - 두하루">
@@ -29,9 +29,9 @@
 </head>
 <body>
 <header class="top"><div class="wrap bar">
-  <a class="brand" href="/"><img src="/assets/img/icon-512.png" alt="" width="30" height="30">두하루</a>
-  <nav class="tabs" aria-label="두하루 소개"><a href="/">홈</a><a href="/story/">만든 이유</a><a href="/features/">핵심 기능</a><a href="/plus/">플러스</a><a href="/guide/">활용법</a></nav>
-  <a class="get" href="/download/">앱 받기</a>
+<a class="brand" href="/"><img src="/assets/img/icon-512.png" alt="" width="30" height="30">두하루</a>
+<nav class="tabs" aria-label="두하루 소개"><a href="/">홈</a><a href="/story/">만든 이유</a><a href="/features/">핵심 기능</a><a href="/plus/">플러스</a><a href="/guide/">활용법</a><a href="/apps/">만든 앱</a></nav>
+<a class="get" href="/download/">앱 받기</a>
 </div></header>
 <main class="wrap doc page">
 <h1>두하루 열기</h1>
@@ -40,15 +40,14 @@
 <p>아직 앱이 없다면 <a href="/download/?src=open">여기서 받아요</a>.</p>
 <script>
 (function(){
-  var ua = navigator.userAgent;
-  if (/iPhone|iPad|iPod|Android/i.test(ua)) setTimeout(function(){ location.href = 'coupleapp://'; }, 50);
+var ua = navigator.userAgent;
+if (/iPhone|iPad|iPod|Android/i.test(ua)) setTimeout(function(){ location.href = 'coupleapp://'; }, 50);
 })();
 </script>
-
 </main>
 <footer class="foot"><div class="wrap">
-  <nav><a href="/support/">도움말·문의</a><a href="/privacy/">개인정보처리방침</a><a href="/terms/">이용약관</a><a href="/delete-account/">계정 삭제</a><a href="/download/">앱 받기</a></nav>
-  <span>두하루(duharu) · 사업자등록번호 264-03-03897 · 통신판매업 신고번호 제2026-서울서대문-1082호 · 문의 duharu.app@gmail.com</span>
+<nav><a href="/support/">도움말·문의</a><a href="/privacy/">개인정보처리방침</a><a href="/terms/">이용약관</a><a href="/delete-account/">계정 삭제</a><a href="/download/">앱 받기</a></nav>
+<span>두하루(duharu) · 사업자등록번호 264-03-03897 · 통신판매업 신고번호 제2026-서울서대문-1082호 · 문의 duharu.app@gmail.com</span>
 </div></footer>
 </body>
 </html>
